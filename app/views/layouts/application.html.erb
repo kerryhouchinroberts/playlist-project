@@ -1,14 +1,45 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>PlaylistProject</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+ <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Playlist</title>
 
-<%= yield %>
+   <%= stylesheet_link_tag    "application" %>
+   <%= javascript_include_tag "vendor/modernizr" %>
+   <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+   <%= csrf_meta_tags %>
+ </head>
 
-</body>
+ <body>
+
+  <script src="jquery.js"></script>
+  <script src="foundation.js"></script>
+  <script src="foundation.magellan.js"></script>
+
+  <div class="sticky">
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">My Site</a></h1>
+        </li>
+         <!-- menu icon at small sizes -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li><a href="/auth/spotify">Sign in with Spotify</a></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+
+
+
+   <%= yield %>
+
+
+ </body>
 </html>
