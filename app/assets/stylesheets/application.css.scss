@@ -5,4 +5,9 @@
 
 @import 'foundation_and_overrides';
 @import 'foundation-icons';
-@import "foundation/components/magellan";
+@import url(http://fonts.googleapis.com/css?family=Great+Vibes);
+
+.site-name {
+  font-size: 100px;
+  font-family: 'Great Vibes', cursive;
+}

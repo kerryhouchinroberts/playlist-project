@@ -21,7 +21,7 @@
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="title-area">
         <li class="name">
-          <h1><a href="#">My Site</a></h1>
+          <h1 class="site-name"><a href="#">Site Name</a></h1>
         </li>
          <!-- menu icon at small sizes -->
         <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
@@ -30,7 +30,11 @@
       <section class="top-bar-section">
         <!-- Right Nav Section -->
         <ul class="right">
-          <li><a href="/auth/spotify">Sign in with Spotify</a></li>
+          <% if current_user %>
+            <li><a href="/signout">Sign Out</a></li>
+          <% else %>
+            <li><a href="/auth/spotify">Sign in with Spotify</a></li>
+          <% end %>
         </ul>
       </section>
     </nav>
