@@ -202,6 +202,7 @@ DEPENDENCIES
   better_errors
   coffee-rails (~> 4.1.0)
   dotenv-rails
+  faraday
   foundation-icons-sass-rails
   foundation-rails
   jbuilder (~> 2.0)

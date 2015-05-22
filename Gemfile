@@ -26,6 +26,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #spotify oauth and api
 gem 'dotenv-rails'
 gem 'rspotify'
+gem 'faraday'
 
 #foundation rails
 gem 'foundation-rails'
